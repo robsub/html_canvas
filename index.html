@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drawing on Canvas</title>
+<script>
+    window.onload = function() { // The anonymous function attached to the window.onload event will execute when the page load.
+        var canvas = document.getElementById("myCanvas"); // Once the page is loaded, we can access the canvas element with document.getElementById() method.
+        var context = canvas.getContext("2d"); // Later we have defined a 2D canvas context by passing 2d into the getContext() method of the canvas object.
+        // draw stuff here (I'm choosing not to)
+    };
+</script>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+
+
+
+
+
+    <script>
+
+/* 3
+    The canvas is a two-dimensional rectangular area. The coordinates of the top-left corner of the canvas are (0, 0) which is known as origin, and the 
+    coordinates of the bottom-right corner are (canvas width, canvas height). Here's a simple demonstration of canvas default coordinate system.
+*/
+
+//  The most basic path you can draw on canvas is a straight line. The most essential methods used for this purpose are moveTo(), lineTo() and the stroke().
+
+
+        window.onload = function() {
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            
+
+
+            context.moveTo(0, 0); // moveTo() method defines the position of drawing cursor onto the canvas,
+            context.lineTo(300, 200); // lineTo() method used to define the coordinates of the line's end point, 
+            context.stroke(); // stroke() method is used to make the line visible. Let's try out an example:
+
+         
+            context.moveTo(300, 0); // moveTo() method defines the position of drawing cursor onto the canvas,
+            context.lineTo(0, 200); // lineTo() method used to define the coordinates of the line's end point, 
+            context.stroke(); // stroke() method is used to make the line visible. Let's try out an example:
+
+
+
+// // 
+
+
+/* 
+    Task one: I have one line, how can I create an X shape? i wanna create an X that spins around and mess with the speed until its just right n looks cool.
+
+    
+*/
+
+
+
+
+
+    };
+    </script>
+</body>
+</html>
